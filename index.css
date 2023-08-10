@@ -1,0 +1,55 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    max-width: 370px;
+    margin:0 auto;
+    font-family: 'Akatab', sans-serif;
+    background: lightgray;
+}
+.container{
+    background: #fff;
+}
+header{
+    border-bottom: solid 1px #c6c6c6;
+    display:flex;
+    justify-content: space-between;
+    padding:16px;
+
+}
+.user{
+    display:flex;
+    padding:10px;
+    gap:10px;
+    line-height: 1.2;
+}
+.user h3{
+    font-size: 16px;
+}
+.user p{
+    font-size: 12px;
+}
+.avatar{
+    border-radius: 50%;
+}
+.main-img{
+    
+    margin-bottom: 20px;
+}
+
+.btn{
+    border:none;
+    background: transparent;
+    font-size: 22px;
+    margin-left:10px;
+}
+.likes{
+margin:10px ;
+font-size: 13px;
+}
+.comments li{
+    list-style: none;
+    margin-left: 10px;
+    padding-bottom: 15px;
+}

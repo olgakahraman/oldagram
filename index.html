@@ -4,33 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oldagram</title>
+    <script
+      src="https://kit.fontawesome.com/758ed9b136.js"
+      crossorigin="anonymous"
+    ></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
     <div class="container">
-    <header>
-      <h1>Oldagram</h1>
-      <img src="a.JPG" alt="your avatar" width="34px" height="34px" />
-    </header>
-    <section name="post">
-      <div class="user">
-        <img
-          src="vincent-van-gogh.png"
-          alt="Vincent Van Gogh's avatar"
-          width="34px"
-          height="34px"
-        />
-        <h3 class="user-name">Vincent van Gogh</h3>
-        <p class="location">Zudert, Netherlands</p>
-      </div>
+      <header>
+        <img src="oldagram-logo.png" alt="oldagram logo" />
+        <img src="a.JPG" alt="your avatar" width="34px" height="34px" class="avatar"/>
+      </header>
+      <section name="post">
+        <div class="user">
+        <div> <img
+            src="Vincent van Gogh.png"
+            alt="Vincent Van Gogh's avatar"
+            width="34px"
+            height="34px"
+            class="avatar"
+          /></div> 
+         <div> <strong><h3 class="user-name">Vincent van Gogh</h3></strong>
+          <p class="location">Zudert, Netherlands</p></div>
+        </div>
+
+        <img src="vincent-van-gogh.png" alt="Vincent portrait" width="100%" class="main-img" />
       
-      <img src="Vincent van Gogh.png" alt="Vincent portrait" width="100%">
-<button class="btn like-btn">like</button>
-<button class="btn comment-btn">comment</button>
-<button class="btn share-btn">share</button>
-    </section>
-</div>
+        <button class="btn like-btn">
+          <i class="fa-regular fa-heart"></i>
+        </button>
+        <button class="btn comment-btn">
+          <i class="fa-regular fa-comment"></i>
+        </button>
+        <button class="btn share-btn">
+          <i class="fa-solid fa-share-nodes"></i>
+        </button>
+       <strong> <p class="likes">21,492 likes</p></strong>
+        <ul class="comments">
+          <li>
+           <strong> <span class="comment-from">vincey1853</span></strong>
+            <span class="comment-text">just took a few mushrooms lol</span>
+          </li>
+        </ul>
+      </section>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
