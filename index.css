@@ -8,15 +8,18 @@ body{
     font-family: 'Akatab', sans-serif;
     background: lightgray;
 }
-.container{
-    background: #fff;
-}
+
 header{
     border-bottom: solid 1px #c6c6c6;
     display:flex;
     justify-content: space-between;
     padding:16px;
+    background: #fff;
 
+}
+.post{
+    background: #fff;
+    margin-bottom: 25px;
 }
 .user{
     display:flex;
@@ -44,6 +47,11 @@ header{
     font-size: 22px;
     margin-left:10px;
 }
+.btn:hover,
+.btn:active{
+    cursor:pointer;
+    
+}
 .likes{
 margin:10px ;
 font-size: 13px;
@@ -51,5 +59,6 @@ font-size: 13px;
 .comments li{
     list-style: none;
     margin-left: 10px;
+    margin-right: 10px;
     padding-bottom: 15px;
 }
