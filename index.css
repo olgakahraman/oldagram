@@ -17,7 +17,7 @@ header{
     background: #fff;
 
 }
-.post{
+.posts{
     background: #fff;
     margin-bottom: 25px;
 }
@@ -46,12 +46,18 @@ header{
     background: transparent;
     font-size: 22px;
     margin-left:10px;
+    transition: all 200ms ease-in-out;
 }
 .btn:hover,
 .btn:active{
     cursor:pointer;
-    
+    transform: scale(1.3);
+
 }
+.like-btn.liked{
+    color: red;
+}
+
 .likes{
 margin:10px ;
 font-size: 13px;
