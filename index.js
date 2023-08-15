@@ -31,10 +31,6 @@ const posts = [
 
 const postsEl = document.querySelector("#posts");
 
-
-
-
-
 window.addEventListener("load", function () {
   let html = "";
   for (let i = 0; i < posts.length; i++) {
@@ -82,16 +78,14 @@ function createPost(post) {
 const likeBtn = document.querySelector("#likeBtn");
 const likeEl = document.querySelector("#likes");
 
+let currentLikes = posts.likes.textContent;
 
 likeBtn.addEventListener("click", function () {
-
-
-  if(likeBtn.classList.add("liked")){
-     currentLikes + 1;
-  likeEl.textContent = currentLikes;
-  }else{
-    likeBtn.classList.remove("liked");
-    
+  let button = document.querySelector("#likeBtn");
+  if (button.classList.contains("liked")) {
+    button.classList.remove("liked");
+  } else {
+    button.classList.add("liked");
+    currentLikes++;
   }
-   
 });
