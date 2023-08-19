@@ -75,17 +75,8 @@ function createPost(post) {
   return postEl;
 }
 
-const likeBtn = document.querySelector("#likeBtn");
-const likeEl = document.querySelector("#likes");
 
-let currentLikes = posts.likes.textContent;
 
-likeBtn.addEventListener("click", function () {
-  let button = document.querySelector("#likeBtn");
-  if (button.classList.contains("liked")) {
-    button.classList.remove("liked");
-  } else {
-    button.classList.add("liked");
-    currentLikes++;
-  }
-});
+
+
+
